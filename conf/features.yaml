@@ -1,0 +1,91 @@
+features:
+  - name: traffic_lag_0
+    family: lag
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: traffic_lag_1
+    family: lag
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: traffic_lag_2
+    family: lag
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: traffic_lag_23
+    family: lag
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: traffic_lag_144
+    family: lag
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: traffic_mean_24
+    family: rolling
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: traffic_std_24
+    family: rolling
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: traffic_mean_168
+    family: rolling
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: traffic_std_168
+    family: rolling
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: origin_temp
+    family: weather
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: origin_rain_1h
+    family: weather
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: origin_snow_1h
+    family: weather
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: origin_clouds_all
+    family: weather
+    role: regressor
+    known_at: origin
+    missing_policy: native
+  - name: target_hour
+    family: calendar
+    role: regressor
+    known_at: target
+    missing_policy: none
+  - name: target_dow
+    family: calendar
+    role: regressor
+    known_at: target
+    missing_policy: none
+  - name: target_month
+    family: calendar
+    role: regressor
+    known_at: target
+    missing_policy: none
+  - name: target_is_weekend
+    family: calendar
+    role: regressor
+    known_at: target
+    missing_policy: none
+  - name: target_is_holiday
+    family: calendar
+    role: regressor
+    known_at: target
+    missing_policy: none
